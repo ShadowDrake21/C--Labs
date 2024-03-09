@@ -1,0 +1,14 @@
+[
+  {
+    "Title": "1984",
+    "Author": "George Orwell",
+    "Year": 1949,
+    "CanBeTakenHome": true
+  },
+  {
+    "Title": "Śniadanie u Tiffany'ego",
+    "Author": "Truman Capote",
+    "Year": 1958,
+    "CanBeTakenHome": false
+  }
+]

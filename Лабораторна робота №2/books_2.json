@@ -1,0 +1,14 @@
+[
+  {
+    "Title": "Icebreaker",
+    "Author": "Hannah Grace",
+    "Year": 2022,
+    "CanBeTakenHome": false
+  },
+  {
+    "Title": "Star Wars, Episode 3: Revenge of the Sith",
+    "Author": "Matthew Stover",
+    "Year": 2005,
+    "CanBeTakenHome": true
+  }
+]
