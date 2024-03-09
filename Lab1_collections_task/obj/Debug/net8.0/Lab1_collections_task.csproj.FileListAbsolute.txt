@@ -12,3 +12,4 @@ E:\Универ\3 курс\2 семестр\Java та C# технології п
 E:\Универ\3 курс\2 семестр\Java та C# технології прикладного програмування\Лабораторні роботи\Виконання\Lab1_collections_task\obj\Debug\net8.0\Lab1_collections_task.pdb
 E:\Универ\3 курс\2 семестр\Java та C# технології прикладного програмування\Лабораторні роботи\Виконання\Lab1_collections_task\obj\Debug\net8.0\Lab1_collections_task.genruntimeconfig.cache
 E:\Универ\3 курс\2 семестр\Java та C# технології прикладного програмування\Лабораторні роботи\Виконання\Lab1_collections_task\obj\Debug\net8.0\ref\Lab1_collections_task.dll
+E:\Универ\3 курс\2 семестр\Java та C# технології прикладного програмування\Лабораторні роботи\Виконання\Lab1_collections_task\obj\Debug\net8.0\Lab1_collections_task.sourcelink.json

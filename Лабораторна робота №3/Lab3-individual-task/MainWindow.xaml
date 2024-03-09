@@ -1,0 +1,93 @@
+﻿<Window x:Class="Lab3_individual_task.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:Lab3_individual_task"
+mc:Ignorable="d"
+Title="Library" Height="450" Width="800">
+<Grid>
+<Grid.ColumnDefinitions>
+<ColumnDefinition />
+<ColumnDefinition />
+</Grid.ColumnDefinitions>
+<Grid Grid.Column="0">
+<Grid.RowDefinitions>
+<RowDefinition Height="auto"></RowDefinition>
+<RowDefinition></RowDefinition>
+</Grid.RowDefinitions>
+<Label Grid.Row="0" Content="Author list" Height="28"
+HorizontalAlignment="Left" Name="Label1" VerticalAlignment="Top"/>
+<DataGrid Grid.Row="1" Name="AuthorGrid" AutoGenerateColumns="False"
+IsReadOnly="True" Width="Auto">
+<DataGrid.Resources>
+<Style TargetType="DataGridCell">
+<Style.Triggers>
+<Trigger Property="IsSelected" Value="True">
+<Setter Property="Background" Value="Green" />
+</Trigger>
+</Style.Triggers>
+<EventSetter Event="MouseLeftButtonUp" Handler="DataGrid_Click"/>
+</Style>
+</DataGrid.Resources>
+<DataGrid.ContextMenu>
+<ContextMenu>
+<MenuItem Header="Add author" Click="MenuItemAddAuthor_Click"/>
+<MenuItem Header="Edit author" Click="MenuItemEditAuthor_Click"/>
+<MenuItem Header="Delete author" Click="MenuItemDeleteAuthor_Click"/>
+</ContextMenu>
+</DataGrid.ContextMenu>
+<DataGrid.Columns>
+<DataGridTextColumn Header="Id" Binding="{Binding Path=Id}" Width="50"/>
+<DataGridTextColumn Header="Author Name" Binding="{Binding
+Path=AuthorName}" Width="100"/>
+<DataGridTextColumn Header="Birth year" Binding="{Binding
+Path=BirthYear}" Width="100"/>
+<DataGridTextColumn Header="Country" Binding="{Binding
+Path=Country}" Width="100"/>
+<DataGridTextColumn Header="The most famous book" Binding="{Binding
+Path=TheMostFamousBook}" Width="100"/>
+</DataGrid.Columns>
+</DataGrid>
+</Grid>
+<GridSplitter Grid.Column="0" Width="2" ShowsPreview="True"/>
+<Grid Grid.Column="1">
+<Grid.RowDefinitions>
+<RowDefinition Height="auto"></RowDefinition>
+<RowDefinition></RowDefinition>
+</Grid.RowDefinitions>
+<Label Grid.Row="0" Content="Books list" Height="28"
+HorizontalAlignment="Left" Name="Label2" VerticalAlignment="Top"/>
+<DataGrid Grid.Row="1" Name="BookGrid" AutoGenerateColumns="False"
+IsReadOnly="True" Width="Auto">
+<DataGrid.Resources>
+<Style TargetType="DataGridCell">
+<Style.Triggers>
+<Trigger Property="IsSelected" Value="True">
+<Setter Property="Background" Value="Green" />
+</Trigger>
+</Style.Triggers>
+</Style>
+</DataGrid.Resources>
+<DataGrid.ContextMenu>
+<ContextMenu>
+<MenuItem Header="Add book" Click="MenuItemAddBook_Click"/>
+<MenuItem Header="Edit book" Click="MenuItemEditBook_Click"/>
+<MenuItem Header="Delete book" Click="MenuItemDeleteBook_Click"/>
+</ContextMenu>
+</DataGrid.ContextMenu>
+<DataGrid.Columns>
+<DataGridTextColumn Header="Id" Binding="{Binding Path=Id}" Width="50"/>
+<DataGridTextColumn Header="Title" Binding="{Binding
+Path=Title}" Width="100"/>
+<DataGridTextColumn Header="Publishing year" Binding="{Binding Path=PublishingYear}"
+Width="100"/>
+<DataGridTextColumn Header="Language" Binding="{Binding Path=Language}"
+Width="100"/>
+<DataGridTextColumn Header="Count pages" Binding="{Binding Path=CountPages}"
+Width="100"/>
+</DataGrid.Columns>
+</DataGrid>
+</Grid>
+</Grid>
+</Window>

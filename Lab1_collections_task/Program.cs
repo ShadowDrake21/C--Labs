@@ -12,7 +12,7 @@ namespace ua.cn.stu
             Console.Title = "Krapyvianskiy D. PI-211";
             for (; ; )
             {
-                Console.WriteLine("-- Please enter command addFirst, removeFirst, addLast, removeLast, remove, addAfter, show or exit --");
+                Console.WriteLine("-- Please enter command addFirst, removeFirst, addLast, removeLast, remove, addAfter, show, saveXML or exit --");
                 string command = Console.ReadLine();
 
                 if (command == "exit")
